@@ -3,12 +3,175 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Portfolio</title>
+	<title>Sasha Bates | Student Developer</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet"
+	/>
 	<link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="top">
+	<div class="bg-layer" aria-hidden="true"></div>
+	<header class="site-header">
+		<a class="logo" href="#top">Sasha Bates</a>
+		<nav>
+			<a href="#timeline">Experience</a>
+			<a href="#projects">Projects</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+
 	<main>
-		<h1>Portfolio</h1>
+		<section class="hero panel">
+			<p class="label top-id"><span class="name-emphasis">Sasha Bates</span> • sashabates.dev</p>
+			<h1>Always down for another project.</h1>
+			<p class="lead">
+				<span class="bio-line">Computer Science student at Utah Tech University, class of 2027. Member of Competitive Programming club.</span>
+				<span class="bio-line">Current Software Developer for Buzz Financial. Web Development intern for UT.</span>
+				<span class="bio-line">Volunteer of SEO at a non-profit. Small business owner + freelance dev work.</span>
+			</p>
+			<ul class="quick-stats" aria-label="highlights">
+				<li><span>Major</span><strong>Computer Science</strong></li>
+				<li><span>School</span><strong>Utah Tech University</strong></li>
+				<li><span>Based In</span><strong>St George, Utah</strong></li>
+			</ul>
+		</section>
+
+		<section id="timeline" class="panel">
+			<h2>Experience</h2>
+			<p class="section-intro">Current work and internship roles, grouped by organization.</p>
+			<div class="timeline">
+				<article>
+					<p class="year">Nov 2025 - Present</p>
+					<h3>Website SEO Specialist - Momivate (Volunteer)</h3>
+					<p>
+						Volunteer member of the Innovate app and web team at a non-profit.
+						Meet regularly with team, be proactive, and improve SEO ratings.
+					</p>
+				</article>
+				<article>
+					<p class="year">Feb 2026 - Present</p>
+					<h3>Web Developer Student Intern - Utah Tech University</h3>
+					<p class="meta">Internship • St George, Utah, United States • Hybrid</p>
+					<p>
+						Created and oversaw pages for UT Elevated.
+					</p>
+				</article>
+				<article>
+					<p class="year">Apr 2025 - Present</p>
+					<h3>Buzz Financial</h3>
+					<p class="meta">1 yr 2 mos • St George, Utah, United States • Hybrid</p>
+					<div class="role-stack" aria-label="Roles at Buzz Financial">
+						<div class="role-item">
+							<p class="meta"><strong>ISV Software Developer</strong> • Full-time • Apr 2025 - Present</p>
+							<p>Hybrid role combining software development, corporate partner relationship management, and recruiting+training team.</p>
+						</div>
+						<div class="role-item">
+							<p class="meta"><strong>ISV Support Specialist</strong> • Part-time • Mar 2025 - Apr 2025</p>
+							<p>Support, troubleshooting, and ticketing management.</p>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="panel">
+			<h2>Education</h2>
+			<div class="projects-grid">
+				<article class="project-card">
+					<h3>Utah Tech University</h3>
+					<p class="meta">Bachelor of Science, Computer Science • 2022 - 2027</p>
+					<p>Activities: Competitive Programming Club, Builders Club.</p>
+				</article>
+				<article class="project-card">
+					<h3>UT SUCCESS Academy</h3>
+					<p class="meta">Associate of Science, High School Diploma • 2022 - 2025</p>
+					<p>
+						Activities: Sterling Scholar (World Languages: Spanish); Yearbook Senior Editor; National Honor
+						Society Historian, Vice President, and Secretary.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="panel">
+			<h2>Licenses & Certifications</h2>
+			<div class="projects-grid">
+				<article class="project-card">
+					<h3>Computing Fundamentals Certificate</h3>
+					<p class="meta">Utah Tech University</p>
+				</article>
+				<article class="project-card">
+					<h3>Adobe Creative Cloud Certified</h3>
+					<p class="meta">Adobe</p>
+				</article>
+				<article class="project-card">
+					<h3>Microsoft Office Specialist Certification</h3>
+					<p class="meta">Microsoft</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="panel">
+			<h2>Honors & Awards</h2>
+			<div class="projects-grid">
+				<article class="project-card">
+					<h3>Seal of Biliteracy - Spanish</h3>
+					<p class="meta">May 2025 • Utah State Board of Education</p>
+				</article>
+				<article class="project-card">
+					<h3>IT1100 Student of the Semester</h3>
+					<p class="meta">April 2023 • UT SUCCESS Academy</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="projects" class="panel">
+			<div class="section-head">
+				<h2>Featured Projects</h2>
+				<a class="text-link" href="https://github.com/sshb4" target="_blank" rel="noreferrer">More on GitHub</a>
+			</div>
+			<div class="projects-grid">
+				<article class="project-card">
+					<p class="tag">Buzz Financial</p>
+					<h3>Music Buzz</h3>
+					<p class="meta">Nov 2025 – Present</p>
+					<p class="meta">Associated with Buzz Financial</p>
+					<div class="compact-copy">
+						<p>CRM designed for music teachers, DJs, recording studios, and adjacent.</p>
+						<p>Incorporates external APIs to take payments securely.</p>
+						<p>Built with Nextjs, Tailwind CSS, and AWS.</p>
+					</div>
+				</article>
+				<article class="project-card">
+					<p class="tag">Utah Tech University</p>
+					<h3>UT Elevated Site</h3>
+					<p class="meta">Feb 2026 – Mar 2026</p>
+					<p class="meta">Associated with Utah Tech University</p>
+					<div class="project-links">
+						<a href="https://src.utahtech.edu/ut-elevated" target="_blank" rel="noreferrer">Visit Site</a>
+					</div>
+				</article>
+				<article class="project-card">
+					<p class="tag">L'Oreal Brandstorm 2026</p>
+					<h3>Un Instant En Bouteille</h3>
+					<p class="meta">Feb 2026 – Mar 2026</p>
+					<p>
+						Worked in a group of 3 students across the nation to participate in the L'Oréal Brandstorm 2026 competition. Developed a logo, deck, and pitch video to present.
+					</p>
+				</article>
+			</div>
+		</section>
+
 	</main>
+
+	<footer class="site-footer">
+		<p>Open to internships, collaborations, and new project ideas.</p>
+		<a href="mailto:sashacbates@gmail.com">sashacbates@gmail.com</a>
+		<a href="https://github.com/sshb4" target="_blank" rel="noreferrer">GitHub</a>
+		<a href="https://www.linkedin.com/in/sasha-bates/" target="_blank" rel="noreferrer">LinkedIn</a>
+	</footer>
 </body>
 </html>
