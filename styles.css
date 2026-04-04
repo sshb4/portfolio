@@ -408,6 +408,15 @@ h3 {
 	text-decoration: underline;
 }
 
+.contact-title-link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.contact-title-link:hover {
+	text-decoration: underline;
+}
+
 .site-footer {
 	display: flex;
 	justify-content: space-between;
