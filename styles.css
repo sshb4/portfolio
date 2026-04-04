@@ -331,6 +331,39 @@ h3 {
 	font-weight: 600;
 }
 
+.project-filter {
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	margin-top: 0.7rem;
+}
+
+.filter-chip {
+	border: 1px solid rgba(49, 72, 98, 0.24);
+	background: rgba(255, 255, 255, 0.82);
+	color: var(--ink);
+	font: inherit;
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	padding: 0.26rem 0.62rem;
+	border-radius: 999px;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.filter-chip:hover {
+	border-color: rgba(217, 79, 42, 0.42);
+	background: rgba(217, 79, 42, 0.09);
+}
+
+.filter-chip.is-active {
+	background: var(--accent);
+	border-color: var(--accent);
+	color: #fff;
+}
+
 .projects-grid {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -345,6 +378,10 @@ h3 {
 	padding: 0.35rem 0 0.55rem 1rem;
 	display: grid;
 	gap: 0.42rem;
+}
+
+.project-card[hidden] {
+	display: none;
 }
 
 .compact-copy {
