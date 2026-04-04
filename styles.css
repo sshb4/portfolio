@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
 	--bg: #f3f2ef;
 	--ink: #1e2734;
@@ -13,6 +17,7 @@
 	--surface: rgba(255, 255, 255, 0.88);
 	--surface-strong: rgba(255, 255, 255, 0.95);
 	--radius: 16px;
+	--ui-transition: 0.2s ease;
 }
 
 body {
@@ -83,7 +88,7 @@ nav a {
 	font-size: 0.95rem;
 	padding: 0.25rem 0.4rem;
 	border-radius: 999px;
-	transition: 0.2s ease;
+	transition: background-color var(--ui-transition), color var(--ui-transition), border-color var(--ui-transition), text-decoration-color var(--ui-transition);
 }
 
 nav a:hover {
@@ -298,14 +303,26 @@ h3 {
 }
 
 .role-stack {
-	margin-top: 0.6rem;
-	padding-left: 0.9rem;
-	border-left: 1px solid rgba(62, 82, 102, 0.22);
-	background: rgba(217, 79, 42, 0.08);
-	padding-top: 0.3rem;
-	padding-bottom: 0.35rem;
+	position: relative;
+	margin-top: 0.55rem;
+	padding: 0.2rem 0 0.15rem 1.1rem;
 	display: grid;
-	gap: 0.55rem;
+	gap: 0.65rem;
+}
+
+.role-stack::before {
+	content: "";
+	position: absolute;
+	left: 0.18rem;
+	top: 0.28rem;
+	bottom: 0.28rem;
+	width: 1px;
+	background: rgba(217, 79, 42, 0.45);
+}
+
+.role-item {
+	position: relative;
+	padding-left: 0.78rem;
 }
 
 .role-item p {
@@ -314,7 +331,20 @@ h3 {
 }
 
 .role-item .meta {
-	margin-bottom: 0.18rem;
+	margin-bottom: 0.12rem;
+	font-size: 0.97rem;
+}
+
+.role-item .meta strong {
+	font-family: "DM Serif Display", "Times New Roman", serif;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	color: var(--ink);
+}
+
+.role-year {
+	font-size: 0.77rem;
+	margin-bottom: 0.08rem;
 }
 
 .section-head {
@@ -329,6 +359,7 @@ h3 {
 	color: var(--accent);
 	text-decoration: none;
 	font-weight: 600;
+	transition: background-color var(--ui-transition), color var(--ui-transition), border-color var(--ui-transition), text-decoration-color var(--ui-transition);
 }
 
 .project-filter {
@@ -350,7 +381,7 @@ h3 {
 	padding: 0.26rem 0.62rem;
 	border-radius: 999px;
 	cursor: pointer;
-	transition: 0.2s ease;
+	transition: background-color var(--ui-transition), color var(--ui-transition), border-color var(--ui-transition), text-decoration-color var(--ui-transition);
 }
 
 .filter-chip:hover {
@@ -382,6 +413,10 @@ h3 {
 
 .project-card[hidden] {
 	display: none;
+}
+
+#skills .project-card p {
+	margin: 0.4rem 0;
 }
 
 .compact-copy {
@@ -432,7 +467,7 @@ h3 {
 	border: 1px solid rgba(217, 79, 42, 0.38);
 	border-radius: 999px;
 	padding: 0.22rem 0.58rem;
-	transition: background 0.2s ease;
+	transition: background-color var(--ui-transition), color var(--ui-transition), border-color var(--ui-transition), text-decoration-color var(--ui-transition);
 }
 
 .project-links a:hover {
@@ -448,6 +483,7 @@ h3 {
 .contact-title-link {
 	color: inherit;
 	text-decoration: none;
+	transition: background-color var(--ui-transition), color var(--ui-transition), border-color var(--ui-transition), text-decoration-color var(--ui-transition);
 }
 
 .contact-title-link:hover {
@@ -472,6 +508,7 @@ h3 {
 	color: var(--ink);
 	text-decoration: none;
 	font-weight: 600;
+	transition: background-color var(--ui-transition), color var(--ui-transition), border-color var(--ui-transition), text-decoration-color var(--ui-transition);
 }
 
 @keyframes rise-in {
@@ -528,5 +565,11 @@ h3 {
 	.timeline {
 		--timeline-pad: 1.5rem;
 		padding-left: var(--timeline-pad);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
 	}
 }
