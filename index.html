@@ -26,9 +26,9 @@
 	<header class="site-header">
 		<a class="logo" href="/">Sasha Bates</a>
 		<nav>
-			<a href="/">Experience</a>
+			<a href="/experience" data-scroll-target="timeline">Experience</a>
 			<a href="/projects">Projects</a>
-			<a href="/">Skills</a>
+			<a href="/skills" data-scroll-target="skills">Skills</a>
 			<a href="/contact">Contact</a>
 		</nav>
 	</header>
@@ -173,5 +173,42 @@
 		<a href="https://github.com/sshb4" target="_blank" rel="noreferrer">GitHub</a>
 		<a href="https://www.linkedin.com/in/sasha-bates/" target="_blank" rel="noreferrer">LinkedIn</a>
 	</footer>
+	<script>
+		const homePaths = new Set(['/', '/index.html']);
+		const onHome = homePaths.has(window.location.pathname);
+
+		if (onHome) {
+			document.querySelectorAll('[data-scroll-target]').forEach((link) => {
+				link.addEventListener('click', (event) => {
+					const targetId = link.dataset.scrollTarget;
+					const target = document.getElementById(targetId);
+
+					if (!target) {
+						return;
+					}
+
+					event.preventDefault();
+					target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+					history.replaceState(null, '', '/');
+				});
+			});
+
+			const searchParams = new URLSearchParams(window.location.search);
+			const queryTarget = searchParams.get('scroll');
+			const storedTarget = sessionStorage.getItem('homeScrollTarget');
+			const initialTarget = queryTarget || storedTarget;
+
+			if (initialTarget) {
+				const target = document.getElementById(initialTarget);
+
+				if (target) {
+					target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}
+
+				sessionStorage.removeItem('homeScrollTarget');
+				history.replaceState(null, '', '/');
+			}
+		}
+	</script>
 </body>
 </html>
