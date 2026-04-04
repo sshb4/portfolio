@@ -26,9 +26,9 @@
 	<header class="site-header">
 		<a class="logo" href="/">Sasha Bates</a>
 		<nav>
-			<a href="/experience">Experience</a>
+			<a href="/?scroll=timeline">Experience</a>
 			<a href="/projects">Projects</a>
-			<a href="/skills">Skills</a>
+			<a href="/?scroll=skills">Skills</a>
 			<a href="/contact">Contact</a>
 		</nav>
 	</header>
@@ -216,7 +216,7 @@
 		</section>
 	</main>
 
-	<a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top">↑</a>
+	<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
 	<footer class="site-footer">
 		<p>Open to internships, collaborations, and new project ideas.</p>
@@ -225,6 +225,14 @@
 		<a href="https://www.linkedin.com/in/sasha-bates/" target="_blank" rel="noreferrer">LinkedIn</a>
 	</footer>
 	<script>
+		const backToTopButton = document.querySelector('.back-to-top');
+
+		if (backToTopButton) {
+			backToTopButton.addEventListener('click', () => {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			});
+		}
+
 		const filterButtons = document.querySelectorAll('.filter-chip');
 		const projectCards = document.querySelectorAll('.project-card');
 

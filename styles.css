@@ -516,17 +516,20 @@ h3 {
 	right: 1.1rem;
 	bottom: 1.1rem;
 	z-index: 20;
+	border: 0;
 	width: 2.5rem;
 	height: 2.5rem;
 	display: grid;
 	place-items: center;
 	border-radius: 999px;
 	text-decoration: none;
+	font-family: inherit;
 	font-size: 1.2rem;
 	font-weight: 700;
 	line-height: 1;
 	color: #ffffff;
 	background: var(--accent);
+	cursor: pointer;
 	box-shadow: 0 10px 20px rgba(30, 45, 67, 0.22);
 	transition: transform var(--ui-transition), background-color var(--ui-transition), box-shadow var(--ui-transition), color var(--ui-transition);
 }
