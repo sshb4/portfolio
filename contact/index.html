@@ -7,10 +7,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
 		rel="stylesheet"
 	/>
-	<link rel="stylesheet" href="/styles.css" />
+	<link rel="stylesheet" href="/styles.css?v=5" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPYB3X56YT"></script>
@@ -21,29 +21,29 @@
 
   gtag('config', 'G-SPYB3X56YT');
 </script>
-<body id="top">
-	<div class="bg-layer" aria-hidden="true"></div>
+<body id="top" class="page-contact">
+	<a class="skip-link" href="#main">Skip to content</a>
 	<header class="site-header">
 		<a class="logo" href="/">Sasha Bates</a>
-		<nav>
-			<a href="/?scroll=timeline">Experience</a>
+		<nav aria-label="Main navigation">
 			<a href="/projects">Projects</a>
+			<a href="/?scroll=timeline">Experience</a>
 			<a href="/?scroll=skills">Skills</a>
-			<a href="/contact">Contact</a>
+			<a href="/contact" aria-current="page">Contact</a>
 		</nav>
 	</header>
 
-	<main>
+	<main id="main">
 		<section class="hero panel">
-			<p class="label">Contact</p>
-			<h1>Let's Build Something</h1>
+
+			<h1>Contact</h1>
 			<p class="lead">
 				I am open to internships, part-time roles (until grad!), and collaboration on projects.
 			</p>
 		</section>
 
-		<section class="panel">
-			<h2>Reach Out</h2>
+		<section class="panel contact-section">
+			<h2>Contact details</h2>
 			<div class="projects-grid">
 				<article class="project-card">
 					<p class="tag">Email</p>
@@ -76,19 +76,11 @@
 	<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
 	<footer class="site-footer">
-		<p>Open to internships, collaborations, and new project ideas.</p>
+				<p class="footer-note">Open to internships, new graduate roles, and projects.</p>
 		<a href="mailto:sasha.bates@utahtech.edu">sasha.bates@utahtech.edu</a>
 		<a href="https://github.com/sshb4" target="_blank" rel="noreferrer">GitHub</a>
 		<a href="https://www.linkedin.com/in/sasha-bates/" target="_blank" rel="noreferrer">LinkedIn</a>
 	</footer>
-	<script>
-		const backToTopButton = document.querySelector('.back-to-top');
-
-		if (backToTopButton) {
-			backToTopButton.addEventListener('click', () => {
-				window.scrollTo({ top: 0, behavior: 'smooth' });
-			});
-		}
-	</script>
-</body>	
+	<script src="/site.js" defer></script>
+</body>
 </html>

@@ -7,10 +7,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
 		rel="stylesheet"
 	/>
-	<link rel="stylesheet" href="/styles.css" />
+	<link rel="stylesheet" href="/styles.css?v=5" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPYB3X56YT"></script>
@@ -21,28 +21,27 @@
 
   gtag('config', 'G-SPYB3X56YT');
 </script>
-<body id="top">
-	<div class="bg-layer" aria-hidden="true"></div>
+<body id="top" class="page-projects">
+	<a class="skip-link" href="#main">Skip to content</a>
 	<header class="site-header">
 		<a class="logo" href="/">Sasha Bates</a>
-		<nav>
+		<nav aria-label="Main navigation">
+			<a href="/projects" aria-current="page">Projects</a>
 			<a href="/?scroll=timeline">Experience</a>
-			<a href="/projects">Projects</a>
 			<a href="/?scroll=skills">Skills</a>
 			<a href="/contact">Contact</a>
 		</nav>
 	</header>
 
-	<main>
+	<main id="main">
 		<section class="hero panel">
-			<p class="label">Projects</p>
-			<h1>Applied experience.</h1>
-			<p class="lead">Selected projects from coursework and professional work.</p>
+			<h1>Projects</h1>
+			<p class="lead">Projects from professional work and coursework.</p>
 		</section>
 
 		<section id="projects" class="panel">
 			<div class="section-head">
-				<h2>Projects</h2>
+				<h2 class="visually-hidden">Project collection</h2>
 				<a class="text-link" href="https://github.com/sshb4" target="_blank" rel="noreferrer">More on GitHub</a>
 			</div>
 			<div class="project-filter" role="group" aria-label="Filter projects by type">
@@ -52,159 +51,183 @@
 				<button class="filter-chip" type="button" data-filter="design" aria-pressed="false">Design</button>
 				<button class="filter-chip" type="button" data-filter="pm" aria-pressed="false">PM</button>
 			</div>
-			<div class="projects-grid">
-				<article class="project-card" data-categories="software">
-					<div class="project-tags">
+			<p class="filter-status" role="status" aria-live="polite" aria-atomic="true">Showing all 11 projects</p>
+			<div class="projects-grid project-index">
+				<article id="music-buzz" class="project-card featured-project" data-project-index="01" data-categories="software">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">Buzz Financial</p>
 						<p class="tag tag-type">Software</p>
 					</div>
-					<h3>Music Buzz</h3>
-					<p class="meta">Nov 2025 - May 2026</p>
-					<div class="compact-copy">
+<h3>Music Buzz</h3>
+<p class="meta">Nov 2025 - May 2026</p>
+</div>
+<div class="project-body"><div class="compact-copy">
 						<p>CRM designed for music teachers, DJs, recording studios, and adjacent.</p>
 						<p>Incorporates external APIs to take payments securely.</p>
 						<p>Built with Nextjs, Tailwind CSS, and AWS.</p>
-					</div>
-				</article>
-				<article class="project-card" data-categories="web">
-					<div class="project-tags">
+					</div></div>
+</article>
+				<article id="ce-math" class="project-card featured-project" data-project-index="02" data-categories="web">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">Utah Tech University</p>
 						<p class="tag tag-type">Web</p>
 					</div>
-					<h3>CE Math Site</h3>
-					<p class="meta">April 2026 - Sept 2026</p>
-					<div class="compact-copy">
+<h3>CE Math Site</h3>
+<p class="meta">April 2026 - Sept 2026</p>
+</div>
+<div class="project-body"><div class="compact-copy">
 						<p>Planned and developed new site for the UT Math department.</p>
 					</div>
 					<div class="project-links">
 						<a href="https://math.utahtech.edu/cemath-overview/" target="_blank" rel="noreferrer">Visit Site</a>
-					</div>
-				</article>
-				<article class="project-card" data-categories="web">
-					<div class="project-tags">
+					</div></div>
+</article>
+				<article id="ut-elevated" class="project-card" data-project-index="03" data-categories="web">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">Utah Tech University</p>
 						<p class="tag tag-type">Web</p>
 					</div>
-					<h3>UT Elevated Site</h3>
-					<p class="meta">Feb 2026 - Mar 2026</p>
-					<div class="compact-copy">
+<h3>UT Elevated Site</h3>
+<p class="meta">Feb 2026 - Mar 2026</p>
+</div>
+<div class="project-body"><div class="compact-copy">
 						<p>Utilized Wordpress to develop and manage a set of pages for the UT Elevated program. Worked within University guidelines to provide a cohesive addition to the main site.</p>
 					</div>
 					<div class="project-links">
 						<a href="https://src.utahtech.edu/ut-elevated" target="_blank" rel="noreferrer">Visit Site</a>
-					</div>
-				</article>
-				<article class="project-card" data-categories="web">
-					<div class="project-tags">
+					</div></div>
+</article>
+				<article id="corbins-triples" class="project-card" data-project-index="04" data-categories="web">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag tag-type">Web</p>
 					</div>
-					<h3>Corbin's Triples</h3>
-					<p class="meta">September 2026</p>
-					<div class="compact-copy">
+<h3>Corbin's Triples</h3>
+<p class="meta">September 2026</p>
+</div>
+<div class="project-body"><div class="compact-copy">
 						<p>Utilized MLB's stats API to develop a site specifically for live-tracking Corbin Carroll's stats (or more specifically, just his triples). Includes Twilio+Cloudflare implementation to get text alerts.</p>
 					</div>
 					<div class="project-links">
 						<a href="https://corbinstriples.com" target="_blank" rel="noreferrer">Visit Site</a>
-					</div>
-				</article>
-				<article class="project-card" data-categories="web">
-					<div class="project-tags">
+					</div></div>
+</article>
+				<article id="momivate" class="project-card" data-project-index="05" data-categories="web">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">Momivate</p>
 						<p class="tag tag-type">Web</p>
 					</div>
-					<h3>Momivate Site SEO</h3>
-					<div class="compact-copy">
+<h3>Momivate Site SEO</h3>
+
+</div>
+<div class="project-body"><div class="compact-copy">
 						<p>Improved overall SEO ratings by 25% through on-page optimization and technical cleanup.</p>
 						<p>Maintained analytics tracking and improved visibility and performance.</p>
 					</div>
 					<div class="project-links">
 						<a href="https://momivate.org/" target="_blank" rel="noreferrer">Visit Site</a>
-					</div>
-				</article>
-				<article class="project-card" data-categories="design,pm">
-					<div class="project-tags">
+					</div></div>
+</article>
+				<article id="brandstorm" class="project-card" data-project-index="06" data-categories="design,pm">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">L'Oréal Brandstorm 2026</p>
 						<p class="tag tag-type">Design</p>
 						<p class="tag tag-type">PM</p>
 					</div>
-					<h3>Un Instant En Bouteille</h3>
-					<p class="meta">Feb 2026 - Mar 2026</p>
-					<p>
+<h3>Un Instant En Bouteille</h3>
+<p class="meta">Feb 2026 - Mar 2026</p>
+</div>
+<div class="project-body"><p>
 						Worked as a group of 3 students across the nation to participate in the L'Oréal Brandstorm 2026 competition. Developed a logo, deck, and pitch video to present.
-					</p>
-				</article>
-				<article class="project-card" data-categories="web,software,pm">
-					<div class="project-tags">
+					</p></div>
+</article>
+				<article id="baseball-model" class="project-card" data-project-index="07" data-categories="web,software,pm">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">Machine Learning Class - CS 4320</p>
 					</div>
-					<h3>Baseball Statistics Prediction Model</h3>
-					<p class="meta">Class Project</p>
-					<div class="compact-copy">
+<h3>Baseball Statistics Prediction Model</h3>
+<p class="meta">Class Project</p>
+</div>
+<div class="project-body"><div class="compact-copy">
 						<p>Utilized various machine learning techniques to train a binary classification model to predict future MLB data based on previous statistics.</p>
 					</div>
 					<div class="project-links">
 						<a href="https://github.com/sshb4/ML2026" target="_blank" rel="noreferrer">View Repo</a>
-					</div>
-				</article>
+					</div></div>
+</article>
 
-				<article class="project-card" data-categories="web,software,pm">
-					<div class="project-tags">
+				<article id="dating-site" class="project-card" data-project-index="08" data-categories="web,software,pm">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">Software Development Class - CS 2450</p>
 						<p class="tag tag-type">Web</p>
 						<p class="tag tag-type">Software</p>
 						<p class="tag tag-type">PM</p>
 					</div>
-					<h3>Dating Site</h3>
-					<p class="meta">Class Project</p>
-					<div class="compact-copy">
+<h3>Dating Site</h3>
+<p class="meta">Class Project</p>
+</div>
+<div class="project-body"><div class="compact-copy">
 						<p>Web app project built within a student team, utilizing Agile scrum methodology.</p>
 						<p>Built with Python, Flask, and Docker.</p>
 					</div>
 					<div class="project-links">
 						<a href="https://github.com/sshb4/OnlyClowns" target="_blank" rel="noreferrer">View Repo</a>
-					</div>
-				</article>
-				<article class="project-card" data-categories="design">
-					<div class="project-tags">
+					</div></div>
+</article>
+				<article id="magazine-layout" class="project-card" data-project-index="09" data-categories="design">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">Graphic Design Class - DES 1100</p>
 						<p class="tag tag-type">Design</p>
 					</div>
-					<h3>Magazine Layout Project</h3>
-					<p class="meta">Class Project</p>
-					<p>Magazine design developed for graphic design coursework utilizing Adobe InDesign and Photoshop.</p>
+<h3>Magazine Layout Project</h3>
+<p class="meta">Class Project</p>
+</div>
+<div class="project-body"><p>Magazine design developed for graphic design coursework utilizing Adobe InDesign and Photoshop.</p>
 					<div class="project-links">
 						<a href="/assets/magazine-design.pdf" target="_blank" rel="noreferrer">View PDF</a>
-					</div>
-				</article>
-				<article class="project-card" data-categories="design">
-					<div class="project-tags">
+					</div></div>
+</article>
+				<article id="photoshop" class="project-card" data-project-index="10" data-categories="design">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">Graphic Design Class - DES 1100</p>
 						<p class="tag tag-type">Design</p>
 					</div>
-					<h3>Photoshop Project</h3>
-					<p class="meta">Class Project</p>
-					<p>
+<h3>Photoshop Project</h3>
+<p class="meta">Class Project</p>
+</div>
+<div class="project-body"><p>
 						Demonstrate use of Photoshop tools by integrating multiple parts into one cohesive image.
 					</p>
 					<div class="project-links">
 						<a href="/assets/photoshop2.jpg" target="_blank" rel="noreferrer">Image</a>
 						<a href="/assets/photoshop1.jpg" target="_blank" rel="noreferrer">Image</a>
-					</div>
-				</article>
-				<article class="project-card" data-categories="web">
-					<div class="project-tags">
+					</div></div>
+</article>
+				<article id="bracket-generator" class="project-card" data-project-index="11" data-categories="web">
+<div class="project-heading">
+<div class="project-tags">
 						<p class="tag">Personal</p>
 						<p class="tag tag-type">Web</p>
 					</div>
-					<h3>Bracket Generator</h3>
-					<p class="meta">July 2026</p>
-					<div class="compact-copy">
+<h3>Bracket Generator</h3>
+<p class="meta">July 2026</p>
+</div>
+<div class="project-body"><div class="compact-copy">
 						<p>Created full-stack web application for generating tournament brackets, implementing user authentication and an email API.</p>
 					</div>
 					<div class="project-links">
 						<a href="https://bracket-generator-dusky.vercel.app/login" target="_blank" rel="noreferrer">Visit Site</a>
-					</div>
-				</article>
+					</div></div>
+</article>
 			</div>
 		</section>
 
@@ -270,40 +293,11 @@
 	<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
 	<footer class="site-footer">
-		<p>Open to internships, collaborations, and new project ideas.</p>
+				<p class="footer-note">Open to internships, new graduate roles, and projects.</p>
 		<a href="mailto:sasha.bates@utahtech.edu">sasha.bates@utahtech.edu</a>
 		<a href="https://github.com/sshb4" target="_blank" rel="noreferrer">GitHub</a>
 		<a href="https://www.linkedin.com/in/sasha-bates/" target="_blank" rel="noreferrer">LinkedIn</a>
 	</footer>
-	<script>
-		const backToTopButton = document.querySelector('.back-to-top');
-
-		if (backToTopButton) {
-			backToTopButton.addEventListener('click', () => {
-				window.scrollTo({ top: 0, behavior: 'smooth' });
-			});
-		}
-
-		const filterButtons = document.querySelectorAll('.filter-chip');
-		const projectCards = document.querySelectorAll('.project-card');
-
-		filterButtons.forEach((button) => {
-			button.addEventListener('click', () => {
-				const selectedFilter = button.dataset.filter;
-
-				filterButtons.forEach((chip) => {
-					const isActive = chip === button;
-					chip.classList.toggle('is-active', isActive);
-					chip.setAttribute('aria-pressed', String(isActive));
-				});
-
-				projectCards.forEach((card) => {
-					const categories = (card.dataset.categories || '').split(',').map((item) => item.trim());
-					const shouldShow = selectedFilter === 'all' || categories.includes(selectedFilter);
-					card.hidden = !shouldShow;
-				});
-			});
-		});
-	</script>
+	<script src="/site.js" defer></script>
 </body>
 </html>
