@@ -3,14 +3,18 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Sasha Bates | Student Developer</title>
+	<title>Sasha Bates | Software Developer + PM</title>
+	<link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml" />
+	<link rel="icon" href="/assets/favicon-32.png?v=2" type="image/png" sizes="32x32" />
+	<link rel="icon" href="/assets/favicon-16.png?v=2" type="image/png" sizes="16x16" />
+	<link rel="apple-touch-icon" href="/assets/favicon-180.png?v=2" sizes="180x180" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
 		rel="stylesheet"
 	/>
-	<link rel="stylesheet" href="styles.css?v=6" />
+	<link rel="stylesheet" href="styles.css?v=10" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPYB3X56YT"></script>
@@ -26,43 +30,142 @@
 	<header class="site-header">
 		<a class="logo" href="/">Sasha Bates</a>
 		<nav aria-label="Main navigation">
-			<a href="/projects">Projects</a>
-			<a href="/?scroll=timeline" data-scroll-target="timeline">Experience</a>
-			<a href="/?scroll=skills" data-scroll-target="skills">Skills</a>
-			<a href="/contact">Contact</a>
+			<a href="/?scroll=projects">Projects</a>
+			<a href="/?scroll=timeline">Experience</a>
+			<a href="/?scroll=skills">Skills</a>
+			<a href="#contact">Contact</a>
+			<a class="nav-social" href="https://github.com/sshb4" target="_blank" rel="noreferrer" aria-label="GitHub">
+				<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.48-2.7-.95-2.7-.95-.36-.92-.89-1.16-.89-1.16-.73-.5.06-.49.06-.49.81.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.22 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.74.54 1.49v2.18c0 .21.15.46.55.38A8 8 0 0 0 8 0Z" /></svg>
+			</a>
+			<a class="nav-social" href="https://www.linkedin.com/in/sasha-bates/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+				<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 1.15C0 .52.52 0 1.17 0h13.66C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.17 1.15H1.17C.52 16 0 15.48 0 14.85V1.15Zm4.94 12.24V6.17h-2.4v7.22h2.4ZM3.74 5.18c.84 0 1.36-.55 1.36-1.25-.02-.71-.52-1.25-1.34-1.25-.82 0-1.36.54-1.36 1.25 0 .7.52 1.25 1.33 1.25h.01Zm4.9 8.21V9.36c0-.22.02-.43.08-.59.18-.43.57-.87 1.23-.87.87 0 1.21.66 1.21 1.63v3.86h2.4V9.25c0-2.21-1.18-3.24-2.76-3.24-1.28 0-1.85.7-2.16 1.19V6.17h-2.4c.03.68 0 7.22 0 7.22h2.4Z" /></svg>
+			</a>
 		</nav>
 	</header>
 
 	<main id="main">
 		<section class="hero panel">
-			<h1>computer science major interested in software and project management</h1>
-			<p class="lead">
-				<span class="bio-line">Computer Science student at Utah Tech University, class of 2027.</span>
-				<span class="bio-line">Current Software Developer for Buzz Financial. Web Development intern for UT.</span>
-				<span class="bio-line">Freelance dev work.</span>
-			</p>
-			<div class="hero-actions"><a class="primary-link" href="/projects">See projects <span aria-hidden="true">↗</span></a></div>
-			<p class="location">Based in St. George, Utah</p>
+			<h1>Software Developer + PM</h1>
+			<div class="hero-intro">
+				<p class="lead">Software Dev + Recruiter @ Buzz Financial | UT CubeSat Software Lead | 3x Dev Intern @ UT | Inc. @ FamilySearch</p>
+				<p class="location">St. George, Utah</p>
+			</div>
 		</section>
 
+		<section id="projects" class="panel home-projects">
+			<div class="section-head">
+				<h2>Projects</h2>
+				<div class="project-header-links">
+					<a class="text-link" href="/projects">View all projects</a>
+					<a class="text-link" href="https://github.com/sshb4" target="_blank" rel="noreferrer">More on GitHub <span aria-hidden="true">↗</span></a>
+				</div>
+			</div>
+			<div class="project-mosaic">
+				<a class="mosaic-card mosaic-large" href="https://clipboardstats.com/" target="_blank" rel="noreferrer">
+					<img class="mosaic-image" src="/assets/project-clipboard-stats.webp" alt="" width="1440" height="1024" />
+					<span class="mosaic-tag">Web / API</span>
+					<div class="mosaic-copy">
+						<h3>Clipboard Stats <span aria-hidden="true">↗</span></h3>
+						<p>Sports statistics trackers — Corbin's Triples, GibbsTDs, WembyBlocks.</p>
+					</div>
+				</a>
+				<article class="mosaic-card mosaic-large">
+					<span class="mosaic-tag">Software Lead</span>
+					<div class="mosaic-copy">
+						<h3>UT Core CubeSat</h3>
+						<p>Leading the 5-person software team building Utah Tech's CubeSat bus for its first mission. I own the State of Health (SOH) system — the onboard software that monitors the satellite's overall health.</p>
+					</div>
+				</article>
+				<a class="mosaic-card mosaic-large mosaic-math" href="https://math.utahtech.edu/cemath-overview/" target="_blank" rel="noreferrer">
+					<img class="mosaic-image" src="/assets/project-ce-math.webp" alt="" width="1400" height="920" />
+					<span class="mosaic-tag">Web</span>
+					<div class="mosaic-copy">
+						<h3>CE Math Site <span aria-hidden="true">↗</span></h3>
+						<p>Planned and developed new site for the UT Math department.</p>
+					</div>
+				</a>
+				<a class="mosaic-card mosaic-elevated" href="https://src.utahtech.edu/ut-elevated" target="_blank" rel="noreferrer">
+					<img class="mosaic-image" src="/assets/project-ut-elevated.webp" alt="" width="1150" height="940" />
+					<span class="mosaic-tag">WordPress</span>
+					<div class="mosaic-copy">
+						<h3>UT Elevated Site <span aria-hidden="true">↗</span></h3>
+						<p>Utilized Wordpress to develop and manage a set of pages for the UT Elevated program. Worked within University guidelines to provide a cohesive addition to the main site.</p>
+					</div>
+				</a>
+				<a class="mosaic-card" href="https://github.com/sshb4/Workout-Split-Agent" target="_blank" rel="noreferrer">
+					<span class="mosaic-tag">Python / AI</span>
+					<div class="mosaic-copy">
+						<h3>Workout Split Agent <span aria-hidden="true">↗</span></h3>
+						<p>AI agent that builds a workout split and picks weights.</p>
+					</div>
+				</a>
+			</div>
+		</section>
 
 		<section id="timeline" class="panel experience-section">
 			<h2>Experience</h2>
 			<div class="timeline">
+				<article>
+					<div class="employer">
+						<h3>FamilySearch</h3>
+						<p class="year">May 2027 – September 2027</p>
+					</div>
+					<div class="role-item">
+						<p class="meta"><strong>Incoming Full Stack Engineer Intern</strong></p>
+						<p>Work on the Memories team to maintain and develop features for FamilySearch web and mobile apps.</p>
+					</div>
+				</article>
 				<article><div class="employer">
-					<p class="year">Aug 2026 - Present</p>
-					<h3>Software Lead - UT Core</h3>
-
-				</div><div class="experience-description"><p>
-						Spend my senior capstone as lead on the five-person software team to develop UT Core, Utah Tech University's cubesat bus, as well as preparing for the first mission.
-					</p></div></article>
+					<p class="year">Mar 2025 - Present</p>
+					<h3>Buzz Financial</h3>
+					<p class="meta">St. George, Utah, United States</p>
+					</div><div class="role-stack" aria-label="Roles at Buzz Financial">
+						<div class="role-item">
+							<p class="year role-year">Apr 2025 - Present</p>
+							<p class="meta"><strong>ISV Software Developer</strong></p>
+							<p>Develop web applications across multiple tech stacks.
+							Independently own projects through deployment, while contributing features to larger team projects.</p>
+						</div>
+						<div class="role-item">
+							<p class="year role-year">Jun 2025 - Present</p>
+							<p class="meta"><strong>Technical Recruiter</strong></p>
+							<p>Manage recruiting across software, marketing, and sales roles, with additional responsibility for training the internal software team.</p>
+						</div>
+						<div class="role-item">
+							<p class="year role-year">Mar 2025 - Apr 2025</p>
+							<p class="meta"><strong>ISV Support Specialist</strong></p>
+							<p>Joined as the first tech-focused hire, supporting partners and troubleshooting software issues while helping lay the groundwork for a now 15+ person software team.</p>
+						</div>
+					</div>
+				</article>
+				<article>
+					<div class="employer">
+						<h3>UT DARP</h3>
+						<p class="year">December 2026 – April 2027</p>
+						<p class="meta">St. George, UT</p>
+					</div>
+					<div class="role-item">
+						<p class="meta"><strong>App Developer Intern</strong></p>
+						<p>For the Design and Rapid Prototyping program based at Utah Tech University, develop production applications for local businesses.</p>
+					</div>
+				</article>
+				<article>
+					<div class="employer">
+						<h3>UT Core CubeSat Team</h3>
+						<p class="year">Aug 2026 – April 2027</p>
+					</div>
+					<div class="role-item">
+						<p class="meta"><strong>Software Lead</strong></p>
+						<p>Spend my senior capstone as lead on the five-person software team to develop UT Core, Utah Tech University's cubesat bus, as well as preparing for the first mission.</p>
+					</div>
+				</article>
 				<article><div class="employer">
-					<p class="year">Feb 2026 - Dec 2026</p>
+					<p class="year">Feb 2026 - Jan 2027</p>
 					<h3>Utah Tech University</h3>
 					<p class="meta">St. George, Utah, United States</p>
 					</div><div class="role-stack" aria-label="Roles at Utah Tech University">
 						<div class="role-item">
-							<p class="year role-year">Aug 2026 - Dec 2026</p>
+							<p class="year role-year">Aug 2026 - Jan 2027</p>
 							<p class="meta"><strong>Web Developer Student Intern</strong></p>
 							<p>Create new site for Case Management. Maintain and update Student Resource Center and UT Elevated site.</p>
 						</div>
@@ -78,27 +181,14 @@
 						</div>
 					</div>
 				</article>
-				<article><div class="employer">
-					<p class="year">Mar 2025 - Present</p>
-					<h3>Buzz Financial</h3>
-					<p class="meta">St. George, Utah, United States</p>
-					</div><div class="role-stack" aria-label="Roles at Buzz Financial">
-						<div class="role-item">
-							<p class="year role-year">Jun 2025 - Present</p>
-							<p class="meta"><strong>Technical Recruiter</strong></p>
-							<p>Manage recruiting across software, marketing, and sales roles, with additional responsibility for training the internal software team.</p>
-						</div>
-						<div class="role-item">
-							<p class="year role-year">Apr 2025 - Present</p>
-							<p class="meta"><strong>ISV Software Developer</strong></p>
-							<p>Develop production web applications across multiple tech stacks.
-							Independently own projects through deployment, while contributing features to larger team projects.</p>
-						</div>
-						<div class="role-item">
-							<p class="year role-year">Mar 2025 - Apr 2025</p>
-							<p class="meta"><strong>ISV Support Specialist</strong></p>
-							<p>Joined as the first tech-focused hire, supporting partners and troubleshooting software issues while helping lay the groundwork for a now 15+ person software team.</p>
-						</div>
+				<article id="acc">
+					<div class="employer">
+						<h3>American Conservation Coalition, Utah Tech Chapter</h3>
+						<p class="year">October 2026 – Present</p>
+					</div>
+					<div class="role-item">
+						<p class="meta"><strong>Branch President</strong></p>
+						<p>Founded and leading the campus ACC chapter: recruiting the presidency, planning events and service projects.</p>
 					</div>
 				</article>
 			</div>
@@ -109,16 +199,7 @@
 			<div class="projects-grid">
 				<article class="project-card">
 					<h3>Utah Tech University</h3>
-					<p class="meta">Bachelor of Science, Computer Science • 2022 - 2027</p>
-					<p>Activities: UT Core, Competitive Programming Club, ASL Club.</p>
-				</article>
-				<article class="project-card">
-					<h3>UT SUCCESS Academy</h3>
-					<p class="meta">Associate of Science, High School Diploma • 2022 - 2025</p>
-					<p>
-						Activities: Sterling Scholar (World Languages: Spanish); Yearbook Senior Editor; National Honor
-						Society Historian, Vice President, and Secretary.
-					</p>
+					<p class="meta">Bachelor of Science, Computer Science • 2023–2027</p>
 				</article>
 			</div>
 		</section>
@@ -142,24 +223,19 @@
 		</section>
 
 		<section id="skills" class="panel skills-section">
-			<h2>Skills & Resume</h2>
-			<div class="projects-grid">
-				<article class="project-card">
-					<h3>Skills</h3>
-					<p><span class="skill-label">People & leadership</span>Hiring, team training, communication, and collaboration.</p>
-					<p><span class="skill-label">Product & engineering</span>Agile development, UX/UI design, API integration, validation, and algorithm optimization.</p>
-					<p><span class="skill-label">Web</span>Web development using HTML, CSS, and JavaScript; WordPress.</p>
-					<p><span class="skill-label">Languages & tools</span>Python, Go, C, C++, React/Nextjs, and RISC-V architecture; SQL; Git; Linux OS.</p>
-					<p><span class="skill-label">Visual design</span>Planning and designing logos, flyers, and magazines with Adobe Suite and other tools.</p>
-					<p><span class="skill-label">Analytics & growth</span>Experience with Google Analytics, Google Ads, and SEO.</p>
-					<p><span class="skill-label">Languages</span>Spanish language limited proficiency (B1 CEFR).</p>
-				</article>
-				<article class="project-card">
-					<h3>Resume</h3>
-					<div class="project-links">
-						<a href="assets/Sasha-Bates-Resume-Apr2026.docx.pdf" target="_blank" rel="noreferrer">View PDF</a>
-					</div>
-				</article>
+			<div class="section-head">
+				<h2>Skills &amp; Resume</h2>
+				<a class="resume-link" href="/assets/SashaBatesResumeNovember2026.docx%20%281%29.pdf" target="_blank" rel="noreferrer">View November Resume (PDF)</a>
+			</div>
+			<div class="skill-grid">
+				<p><span class="skill-label">People &amp; leadership</span>Hiring, team training, communication, and collaboration.</p>
+				<p><span class="skill-label">Project management</span>Project management, recruiting, and team training.</p>
+				<p><span class="skill-label">Product &amp; engineering</span>Agile development, UX/UI design, internal and external API integration, code validation, and algorithm optimization.</p>
+				<p><span class="skill-label">Web</span>HTML, CSS, JavaScript, and WordPress.</p>
+				<p><span class="skill-label">Languages &amp; tools</span>Python, Go, C, C++, React/Next.js, RISC-V, SQL, Git, and Linux. Familiar with Swift and LaTeX.</p>
+				<p><span class="skill-label">Visual design</span>Planning and designing logos, flyers, and magazines with Adobe Suite.</p>
+				<p><span class="skill-label">Analytics &amp; growth</span>Google Analytics, Google Ads, and SEO.</p>
+				<p><span class="skill-label">Languages</span>Spanish — limited proficiency (B1 CEFR). Seal of Biliteracy – Spanish (certification).</p>
 			</div>
 		</section>
 
@@ -181,12 +257,12 @@
 
 	<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
-	<footer class="site-footer">
-				<p class="footer-note">Open to internships, new graduate roles, and projects.</p>
+	<footer class="site-footer" id="contact" aria-label="Contact">
+		<p class="footer-note">Open to full-time software and PM roles starting fall 2027.</p>
 		<a href="mailto:sasha.bates@utahtech.edu">sasha.bates@utahtech.edu</a>
 		<a href="https://github.com/sshb4" target="_blank" rel="noreferrer">GitHub</a>
 		<a href="https://www.linkedin.com/in/sasha-bates/" target="_blank" rel="noreferrer">LinkedIn</a>
 	</footer>
-	<script src="/site.js" defer></script>
+	<script src="/site.js?v=8" defer></script>
 </body>
 </html>

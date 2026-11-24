@@ -4,13 +4,17 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Projects | Sasha Bates</title>
+	<link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml" />
+	<link rel="icon" href="/assets/favicon-32.png?v=2" type="image/png" sizes="32x32" />
+	<link rel="icon" href="/assets/favicon-16.png?v=2" type="image/png" sizes="16x16" />
+	<link rel="apple-touch-icon" href="/assets/favicon-180.png?v=2" sizes="180x180" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
 		rel="stylesheet"
 	/>
-	<link rel="stylesheet" href="/styles.css?v=6" />
+	<link rel="stylesheet" href="/styles.css?v=10" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPYB3X56YT"></script>
@@ -29,7 +33,13 @@
 			<a href="/projects" aria-current="page">Projects</a>
 			<a href="/?scroll=timeline">Experience</a>
 			<a href="/?scroll=skills">Skills</a>
-			<a href="/contact">Contact</a>
+			<a href="/#contact">Contact</a>
+			<a class="nav-social" href="https://github.com/sshb4" target="_blank" rel="noreferrer" aria-label="GitHub">
+				<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.48-2.7-.95-2.7-.95-.36-.92-.89-1.16-.89-1.16-.73-.5.06-.49.06-.49.81.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.22 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.74.54 1.49v2.18c0 .21.15.46.55.38A8 8 0 0 0 8 0Z" /></svg>
+			</a>
+			<a class="nav-social" href="https://www.linkedin.com/in/sasha-bates/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+				<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 1.15C0 .52.52 0 1.17 0h13.66C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.17 1.15H1.17C.52 16 0 15.48 0 14.85V1.15Zm4.94 12.24V6.17h-2.4v7.22h2.4ZM3.74 5.18c.84 0 1.36-.55 1.36-1.25-.02-.71-.52-1.25-1.34-1.25-.82 0-1.36.54-1.36 1.25 0 .7.52 1.25 1.33 1.25h.01Zm4.9 8.21V9.36c0-.22.02-.43.08-.59.18-.43.57-.87 1.23-.87.87 0 1.21.66 1.21 1.63v3.86h2.4V9.25c0-2.21-1.18-3.24-2.76-3.24-1.28 0-1.85.7-2.16 1.19V6.17h-2.4c.03.68 0 7.22 0 7.22h2.4Z" /></svg>
+			</a>
 		</nav>
 	</header>
 
@@ -51,24 +61,9 @@
 				<button class="filter-chip" type="button" data-filter="design" aria-pressed="false">Design</button>
 				<button class="filter-chip" type="button" data-filter="pm" aria-pressed="false">PM</button>
 			</div>
-			<p class="filter-status" role="status" aria-live="polite" aria-atomic="true">Showing all 11 projects</p>
+			<p class="filter-status" role="status" aria-live="polite" aria-atomic="true">Showing all 12 projects</p>
 			<div class="projects-grid project-index">
-				<article id="music-buzz" class="project-card featured-project" data-project-index="01" data-categories="software">
-<div class="project-heading">
-<div class="project-tags">
-						<p class="tag">Buzz Financial</p>
-						<p class="tag tag-type">Software</p>
-					</div>
-<h3>Music Buzz</h3>
-<p class="meta">Nov 2025 - May 2026</p>
-</div>
-<div class="project-body"><div class="compact-copy">
-						<p>CRM designed for music teachers, DJs, recording studios, and adjacent.</p>
-						<p>Incorporates external APIs to take payments securely.</p>
-						<p>Built with Nextjs, Tailwind CSS, and AWS.</p>
-					</div></div>
-</article>
-				<article id="ce-math" class="project-card featured-project" data-project-index="02" data-categories="web">
+				<article id="ce-math" class="project-card featured-project" data-categories="web">
 <div class="project-heading">
 <div class="project-tags">
 						<p class="tag">Utah Tech University</p>
@@ -84,7 +79,7 @@
 						<a href="https://math.utahtech.edu/cemath-overview/" target="_blank" rel="noreferrer">Visit Site</a>
 					</div></div>
 </article>
-				<article id="ut-elevated" class="project-card" data-project-index="03" data-categories="web">
+				<article id="ut-elevated" class="project-card" data-categories="web">
 <div class="project-heading">
 <div class="project-tags">
 						<p class="tag">Utah Tech University</p>
@@ -100,22 +95,55 @@
 						<a href="https://src.utahtech.edu/ut-elevated" target="_blank" rel="noreferrer">Visit Site</a>
 					</div></div>
 </article>
-				<article id="corbins-triples" class="project-card" data-project-index="04" data-categories="web">
-<div class="project-heading">
-<div class="project-tags">
-						<p class="tag tag-type">Web</p>
+				<article id="clipboard-stats" class="project-card" data-categories="web">
+					<div class="project-heading">
+						<div class="project-tags">
+							<p class="tag tag-type">Web / API</p>
+						</div>
+						<h3>Clipboard Stats</h3>
 					</div>
-<h3>Corbin's Triples</h3>
-<p class="meta">September 2026</p>
-</div>
-<div class="project-body"><div class="compact-copy">
-						<p>Utilized MLB's stats API to develop a site specifically for live-tracking Corbin Carroll's stats (or more specifically, just his triples). Includes Twilio+Cloudflare implementation to get text alerts.</p>
+					<div class="project-body">
+						<div id="corbins-triples">
+							<h4><a href="https://corbinstriples.com" target="_blank" rel="noreferrer">Corbin's Triples</a></h4>
+							<p class="meta">September 2026</p>
+							<p>Utilized MLB's stats API to develop a site specifically for live-tracking Corbin Carroll's stats (or more specifically, just his triples). Includes Twilio+Cloudflare implementation to get text alerts.</p>
+						</div>
+						<ul class="tracker-links">
+							<li><a href="https://gibbstouchdowns.com/" target="_blank" rel="noreferrer">GibbsTDs</a></li>
+							<li><a href="https://wembyblocks.com/" target="_blank" rel="noreferrer">WembyBlocks</a></li>
+						</ul>
+						<div class="project-links">
+							<a href="https://clipboardstats.com/" target="_blank" rel="noreferrer">Visit Clipboard Stats</a>
+						</div>
 					</div>
-					<div class="project-links">
-						<a href="https://corbinstriples.com" target="_blank" rel="noreferrer">Visit Site</a>
-					</div></div>
-</article>
-				<article id="momivate" class="project-card" data-project-index="05" data-categories="web">
+				</article>
+				<article id="ut-core-cubesat" class="project-card" data-categories="software">
+					<div class="project-heading">
+						<div class="project-tags">
+							<p class="tag tag-type">Software Lead</p>
+						</div>
+						<h3>UT Core CubeSat</h3>
+					</div>
+					<div class="project-body compact-copy">
+						<p>For my senior capstone at Utah Tech University, I lead the five-person software team building the UT Core CubeSat bus and preparing it for its first mission.</p>
+						<p>I own the State of Health (SOH) system, the onboard software that monitors the satellite’s overall health.</p>
+					</div>
+				</article>
+				<article id="workout-split-agent" class="project-card" data-categories="software">
+					<div class="project-heading">
+						<div class="project-tags">
+							<p class="tag tag-type">Python / AI</p>
+						</div>
+						<h3>Workout Split Agent</h3>
+					</div>
+					<div class="project-body">
+						<p>AI agent that builds a workout split and picks weights.</p>
+						<div class="project-links">
+							<a href="https://github.com/sshb4/Workout-Split-Agent" target="_blank" rel="noreferrer">View Repo</a>
+						</div>
+					</div>
+				</article>
+				<article id="momivate" class="project-card" data-categories="web">
 <div class="project-heading">
 <div class="project-tags">
 						<p class="tag">Momivate</p>
@@ -132,7 +160,7 @@
 						<a href="https://momivate.org/" target="_blank" rel="noreferrer">Visit Site</a>
 					</div></div>
 </article>
-				<article id="brandstorm" class="project-card" data-project-index="06" data-categories="design,pm">
+				<article id="brandstorm" class="project-card" data-categories="design,pm">
 <div class="project-heading">
 <div class="project-tags">
 						<p class="tag">L'Oréal Brandstorm 2026</p>
@@ -146,7 +174,7 @@
 						Worked as a group of 3 students across the nation to participate in the L'Oréal Brandstorm 2026 competition. Developed a logo, deck, and pitch video to present.
 					</p></div>
 </article>
-				<article id="baseball-model" class="project-card" data-project-index="07" data-categories="web,software,pm">
+				<article id="baseball-model" class="project-card" data-categories="web,software,pm">
 <div class="project-heading">
 <div class="project-tags">
 						<p class="tag">Machine Learning Class - CS 4320</p>
@@ -162,7 +190,7 @@
 					</div></div>
 </article>
 
-				<article id="dating-site" class="project-card" data-project-index="08" data-categories="web,software,pm">
+				<article id="dating-site" class="project-card" data-categories="web,software,pm">
 <div class="project-heading">
 <div class="project-tags">
 						<p class="tag">Software Development Class - CS 2450</p>
@@ -181,7 +209,7 @@
 						<a href="https://github.com/sshb4/OnlyClowns" target="_blank" rel="noreferrer">View Repo</a>
 					</div></div>
 </article>
-				<article id="magazine-layout" class="project-card" data-project-index="09" data-categories="design">
+				<article id="magazine-layout" class="project-card" data-categories="design">
 <div class="project-heading">
 <div class="project-tags">
 						<p class="tag">Graphic Design Class - DES 1100</p>
@@ -195,7 +223,7 @@
 						<a href="/assets/magazine-design.pdf" target="_blank" rel="noreferrer">View PDF</a>
 					</div></div>
 </article>
-				<article id="photoshop" class="project-card" data-project-index="10" data-categories="design">
+				<article id="photoshop" class="project-card" data-categories="design">
 <div class="project-heading">
 <div class="project-tags">
 						<p class="tag">Graphic Design Class - DES 1100</p>
@@ -212,7 +240,7 @@
 						<a href="/assets/photoshop1.jpg" target="_blank" rel="noreferrer">Image</a>
 					</div></div>
 </article>
-				<article id="bracket-generator" class="project-card" data-project-index="11" data-categories="web">
+				<article id="bracket-generator" class="project-card" data-categories="web">
 <div class="project-heading">
 <div class="project-tags">
 						<p class="tag">Personal</p>
@@ -293,11 +321,11 @@
 	<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
 
 	<footer class="site-footer">
-				<p class="footer-note">Open to internships, new graduate roles, and projects.</p>
+				<p class="footer-note">Open to full-time software and PM roles starting fall 2027.</p>
 		<a href="mailto:sasha.bates@utahtech.edu">sasha.bates@utahtech.edu</a>
 		<a href="https://github.com/sshb4" target="_blank" rel="noreferrer">GitHub</a>
 		<a href="https://www.linkedin.com/in/sasha-bates/" target="_blank" rel="noreferrer">LinkedIn</a>
 	</footer>
-	<script src="/site.js" defer></script>
+	<script src="/site.js?v=8" defer></script>
 </body>
 </html>

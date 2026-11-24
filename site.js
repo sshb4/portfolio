@@ -2,34 +2,25 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const scrollToElement = (element) => element.scrollIntoView({
   behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'start'
 });
-const onHome = ['/', '/index.html'].includes(window.location.pathname);
-const homeLinks = document.querySelectorAll('nav a[href*="scroll="]');
-
-function setActiveSection(id) {
-  homeLinks.forEach((link) => {
-    if (new URL(link.href).searchParams.get('scroll') === id) {
-      link.setAttribute('aria-current', 'location');
-    } else {
-      link.removeAttribute('aria-current');
-    }
-  });
-}
-
 document.querySelector('.back-to-top')?.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
   history.replaceState(null, '', window.location.pathname + window.location.search);
 });
 
-if (onHome) {
-  homeLinks.forEach((link) => {
+if (document.body.classList.contains('page-home')) {
+  const homeSections = Array.from(document.querySelectorAll('nav a[href*="scroll="], nav a[href="#contact"]'), (link) => {
+    const { hash, searchParams } = new URL(link.href);
+    const id = searchParams.get('scroll') || hash.slice(1);
+    return { link, section: document.getElementById(id) };
+  }).filter(({ section }) => section);
+
+  const contact = homeSections.find(({ section }) => section.id === 'contact');
+  homeSections.filter(({ link }) => !link.hash).forEach(({ link, section }) => {
     link.addEventListener('click', (event) => {
-      const id = new URL(link.href).searchParams.get('scroll');
-      const target = document.getElementById(id);
-      if (!target) return;
+      if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
-      scrollToElement(target);
+      scrollToElement(section);
       history.replaceState(null, '', '/');
-      setActiveSection(id);
     });
   });
   let storedTarget;
@@ -41,11 +32,20 @@ if (onHome) {
     history.replaceState(null, '', '/');
   }
   const updateActiveSection = () => {
-    const active = ['timeline', 'skills'].find((id) => {
-      const rect = document.getElementById(id).getBoundingClientRect();
-      return rect.top <= window.innerHeight * .4 && rect.bottom > window.innerHeight * .4;
+    const readingLine = Math.min(window.innerHeight * .4, 225);
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    const visible = homeSections.find(({ section }) => {
+      const rect = section.getBoundingClientRect();
+      return rect.top <= readingLine && rect.bottom > readingLine;
     });
-    setActiveSection(active);
+    const active = window.scrollY > 1 && ((atBottom && contact) || visible);
+    homeSections.forEach(({ link }) => {
+      if (active?.link === link) {
+        link.setAttribute('aria-current', 'location');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
   };
   let scheduled = false;
   window.addEventListener('scroll', () => {
@@ -53,6 +53,8 @@ if (onHome) {
     scheduled = true;
     requestAnimationFrame(() => { updateActiveSection(); scheduled = false; });
   }, { passive: true });
+  window.addEventListener('resize', updateActiveSection);
+  document.fonts.ready.then(updateActiveSection);
   updateActiveSection();
 }
 
